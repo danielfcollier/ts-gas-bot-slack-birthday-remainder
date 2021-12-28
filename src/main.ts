@@ -9,7 +9,7 @@ function main() {
 
   birthdayPeople.forEach(person => {
     const birthdayMessage = Birthday.getMessage(person.id, person.language);
-    console.log(birthdayMessage);
+
     Slack.sendMessage(birthdayMessage);
   });
 }
