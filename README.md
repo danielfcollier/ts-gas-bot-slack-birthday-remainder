@@ -35,7 +35,7 @@ const birthdayMessages = {
 
 The timer is set to send messages everyday at the time specified in the `chosenTimer` variable - by default at **9 am**. The enum `TimerOptions` contain options to send morning or afternoon messages.
 
-### env file
+### env file:
 
 The `env` file is not strictly an env file, but a TypeScript version where the settings are hidden through the `.gitignore` file. An example is provided at `env.example.ts` , where to use the file set its name to be `env.ts` 
 
