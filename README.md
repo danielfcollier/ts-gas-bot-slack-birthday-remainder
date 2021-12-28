@@ -2,11 +2,19 @@
 
 ## Bot hosted at:
 
-[Google Sheet.]()
+Google Sheet.
 
 ## Registration form:
 
-[Link to the form.]()
+Form fields and sheet data schema:
+
+- Timestamp
+- Name
+- Email
+- Birthday
+- Language
+- Slack ID
+- Status
 
  ## Basic configuration:
 
