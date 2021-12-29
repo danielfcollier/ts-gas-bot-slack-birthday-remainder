@@ -1,5 +1,3 @@
-import { TimerOptions } from "../config/index";
-
 export default class Trigger {
   static clear() {
     const triggers = ScriptApp.getProjectTriggers();
@@ -8,13 +6,13 @@ export default class Trigger {
     return !ScriptApp.getProjectTriggers().length ? true : false;
   }
 
-  static init() {
+  static init(time) {
     this.clear();
 
     ScriptApp.newTrigger('main')
       .timeBased()
       .everyDays(1)
-      .atHour(TimerOptions.morning)
+      .atHour(time)
       .create();
   }
 }

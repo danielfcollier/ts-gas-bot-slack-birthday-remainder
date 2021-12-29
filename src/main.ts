@@ -13,3 +13,5 @@ function main() {
     Slack.sendMessage(birthdayMessage);
   });
 }
+
+export default main;
