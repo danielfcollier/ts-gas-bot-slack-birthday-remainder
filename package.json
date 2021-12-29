@@ -9,8 +9,9 @@
     "onchange": "npm run pretty && clasp push",
     "prepare": "husky install",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "pretty": "pretty-quick --ignore-path .prettierignore --config .prettierrc.json --pattern '**/*.{ts,js}'",
-    "pretty:staged": "npm run pretty -- --staged"
+    "pretty:start": "npx prettier --write .",
+    "pretty:quick": "pretty-quick --ignore-path .prettierignore --config .prettierrc.json --pattern '**/*.{ts,js}'",
+    "pretty:staged": "npm run pretty:quick -- --staged"
   },
   "keywords": [],
   "author": "",
