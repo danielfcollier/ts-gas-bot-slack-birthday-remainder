@@ -1,4 +1,4 @@
-import { SHEET_ID, SLACK_ENDPOINT, SLACK_ROOM } from "./env";
+import { SHEET_ID, SLACK_ENDPOINT, SLACK_ROOM } from './env';
 
 // Birthday
 
@@ -12,7 +12,7 @@ const birthdayMessages = {
 enum TimerOptions {
   morning = 9,
   afternoon = 14,
-};
+}
 
 const chosenTimer: number = TimerOptions.morning;
 
@@ -32,23 +32,7 @@ const slackParams = {
 
 const dbConfig = {
   name: 'Form Responses',
-  schema: [
-    'timestamp',
-    'name',
-    'email',
-    'birthday',
-    'language',
-    'id',
-    'status'
-  ],
+  schema: ['timestamp', 'name', 'email', 'birthday', 'language', 'id', 'status'],
 };
 
-
-export {
-  birthdayMessages,
-  TimerOptions,
-  chosenTimer,
-  sheetID,
-  slackParams,
-  dbConfig,
-};
+export { birthdayMessages, TimerOptions, chosenTimer, sheetID, slackParams, dbConfig };

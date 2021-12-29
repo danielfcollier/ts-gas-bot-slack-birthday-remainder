@@ -16,7 +16,7 @@ export default class Slack {
     const params = {
       method: 'post' as GoogleAppsScript.URL_Fetch.HttpMethod,
       headers: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
       },
       payload: JSON.stringify(payload),
     };

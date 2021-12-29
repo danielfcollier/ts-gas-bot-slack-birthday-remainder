@@ -1,6 +1,6 @@
 const toProperCase = (text: string) => {
-  return text.toLowerCase().replace(/^(.)|\s(.)/g, $1 => $1.toUpperCase());
-}
+  return text.toLowerCase().replace(/^(.)|\s(.)/g, ($1) => $1.toUpperCase());
+};
 
 export default class Utils {
   static buildObject(schema, array) {
@@ -18,5 +18,5 @@ export default class Utils {
   static getFirstName(name: string) {
     const firstName = name.trim().split(' ')[0];
     return toProperCase(firstName);
-  };
+  }
 }

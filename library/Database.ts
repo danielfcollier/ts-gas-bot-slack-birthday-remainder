@@ -1,6 +1,6 @@
-import { dbConfig } from "../config/index";
-import Sheet from "./Sheet";
-import Utils from "./Utils";
+import { dbConfig } from '../config/index';
+import Sheet from './Sheet';
+import Utils from './Utils';
 
 export default class Database {
   static build(params, key) {
@@ -9,7 +9,7 @@ export default class Database {
     const database = new Map();
 
     data.forEach((array) => {
-      database.set(array[keyIndex], Utils.buildObject(dbConfig.schema, array))
+      database.set(array[keyIndex], Utils.buildObject(dbConfig.schema, array));
     });
 
     return database;

@@ -1,7 +1,7 @@
 import { birthdayMessages } from '../config/index';
 import Slack from './Slack';
 
-const defaultLanguage = "pt-br";
+const defaultLanguage = 'pt-br';
 
 export default class Birthday {
   static getMessage(slackID, language) {
@@ -12,11 +12,11 @@ export default class Birthday {
     const today = new Date();
     const birthdayPeople = [];
 
-    database.forEach(entry => {
+    database.forEach((entry) => {
       const birthday = new Date(entry.birthday);
       const day = birthday.getDate();
       const month = birthday.getMonth();
-      const isToday = (day === today.getDate()) && (month === today.getMonth());
+      const isToday = day === today.getDate() && month === today.getMonth();
       const isActive = entry.status === 'Active';
 
       if (isToday && isActive) {

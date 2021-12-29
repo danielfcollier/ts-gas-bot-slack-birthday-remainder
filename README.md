@@ -16,7 +16,7 @@ Form fields and sheet data schema:
 - Slack ID
 - Status
 
- ## Basic configuration:
+## Basic configuration:
 
 ### Birthday message:
 
@@ -37,11 +37,11 @@ The timer is set to send messages everyday at the time specified in the `chosenT
 
 ### env file:
 
-The `env` file is not strictly an env file, but a TypeScript version where the settings are hidden through the `.gitignore` file. An example is provided at `env.example.ts` , where to use the file set its name to be `env.ts` 
+The `env` file is not strictly an env file, but a TypeScript version where the settings are hidden through the `.gitignore` file. An example is provided at `env.example.ts` , where to use the file set its name to be `env.ts`
 
 ## Getting Started with the Project
 
-*Please note:* it is required admin access to edit the script project. Or, you can create a new script project (add the `scriptId` to the `.clasp.json` file) and push all the files to this new project.
+_Please note:_ it is required admin access to edit the script project. Or, you can create a new script project (add the `scriptId` to the `.clasp.json` file) and push all the files to this new project.
 
 1. Clone the project:
 
@@ -64,12 +64,10 @@ clasp login
 4. Update the `.clasp.json` to set the project directory to the current working directory. In bash, type:
 
 ```bash
-pwd | xargs clasp settings rootDir 
+pwd | xargs clasp settings rootDir
 ```
 
 ## Recommended Tools
 
 - Formatting Tool
   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-
-

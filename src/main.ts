@@ -7,7 +7,7 @@ const myDB = Database.get();
 function main() {
   const birthdayPeople = Birthday.getPeople(myDB);
 
-  birthdayPeople.forEach(person => {
+  birthdayPeople.forEach((person) => {
     const birthdayMessage = Birthday.getMessage(person.id, person.language);
 
     Slack.sendMessage(birthdayMessage);
